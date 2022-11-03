@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.Diagnostics;
 using System.Linq;
 using Xunit;
 
@@ -13,6 +14,7 @@ namespace SeleniumXUnitTest
         public DriverFixture()
         {
             Driver = new ChromeDriver();
+            Debug.WriteLine("Init driver");
         }
 
         public void Dispose()
